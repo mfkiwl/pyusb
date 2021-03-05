@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Copyright 2009-2017 Wander Lairson Costa
-# Copyright 2009-2020 PyUSB contributors
+# Copyright 2009-2021 PyUSB contributors
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -69,16 +69,16 @@ setup(
     use_scm_version=pyusb_scm_version,
     setup_requires=setuptools_scm,
     description='Python USB access module',
-    author='Robert Wlodarczyk',
-    author_email='robert@simplicityguy.com',
+    author='Jonas Malaco',
+    author_email='me@jonasmalaco.com',
     url='https://pyusb.github.io/pyusb',
     packages=['usb', 'usb.backend'],
     long_description=
 """
 PyUSB offers easy USB devices communication in Python.
 It should work without additional code in any environment with
-Python >= 2.4, ctypes and a pre-built USB backend library
-(currently: libusb 0.1.x, libusb 1.x, or OpenUSB).
+Python >= 3.6, ctypes and a pre-built USB backend library
+(currently: libusb 1.x, libusb 0.1.x or OpenUSB).
 """,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -94,16 +94,16 @@ Python >= 2.4, ctypes and a pre-built USB backend library
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows :: Windows Vista',
         'Operating System :: Microsoft :: Windows :: Windows 7',
+        'Operating System :: Microsoft :: Windows :: Windows 10',
         'Operating System :: POSIX :: BSD :: FreeBSD',
         'Operating System :: POSIX :: BSD :: NetBSD',
         'Operating System :: POSIX :: BSD :: OpenBSD',
         'Operating System :: POSIX :: Linux',
         'Operating System :: POSIX :: SunOS/Solaris',
-        'Programming Language :: Python :: 2.4',
-        'Programming Language :: Python :: 2.5',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         # source(CPython,Jython,IronPython,PyPy): "The Long Term" section of
         # http://ojs.pythonpapers.org/index.php/tpp/article/viewFile/23/23
         'Programming Language :: Python :: Implementation :: CPython',
